@@ -12,23 +12,19 @@
 
 ### 1. ユーザーが入力・登録する情報
 
-| 情報の種類 | 内容 |
-|-----------|------|
-| アカウント情報 | Google または Apple によるサインイン時に取得する氏名・メールアドレス |
-| 愛犬のプロフィール | 犬の名前・犬種・誕生日・性別・体重など |
-| カレンダー・記録データ | 健康記録・活動記録・カスタムテンプレートの内容 |
-| 施設提案 | ユーザーが投稿したスポット情報（名称・説明・位置情報） |
-| コミュニティ投稿 | イベント情報などの投稿コンテンツ |
+- アカウント情報: Google または Apple によるサインイン時に取得する氏名・メールアドレス
+- 愛犬のプロフィール: 犬の名前・犬種・誕生日・性別・体重など
+- カレンダー・記録データ: 健康記録・活動記録・カスタムテンプレートの内容
+- 施設提案: ユーザーが投稿したスポット情報（名称・説明・位置情報）
+- コミュニティ投稿: イベント情報などの投稿コンテンツ
 
 ### 2. 自動的に収集される情報
 
-| 情報の種類 | 内容 |
-|-----------|------|
-| 端末情報 | OS種別・バージョン・端末モデル（クラッシュ解析目的） |
-| アプリ利用状況 | 操作ログ・機能の使用状況（サービス改善目的） |
-| クラッシュ情報 | エラーログ・クラッシュレポート |
-| 広告識別情報 | 広告ID（IDFA/GAID）・IPアドレス（広告配信目的） |
-| プッシュ通知トークン | Firebase Messaging によるプッシュ通知配信用 |
+- 端末情報: OS種別・バージョン・端末モデル（クラッシュ解析目的）
+- アプリ利用状況: 操作ログ・機能の使用状況（サービス改善目的）
+- クラッシュ情報: エラーログ・クラッシュレポート
+- 広告識別情報: 広告ID（IDFA/GAID）・IPアドレス（広告配信目的）
+- プッシュ通知トークン: Firebase Messaging によるプッシュ通知配信用
 
 ### 3. 位置情報
 
@@ -69,17 +65,21 @@
 
 本アプリは、以下の外部サービスを利用しています。各サービスのプライバシーポリシーも合わせてご確認ください。
 
-| サービス | 提供元 | 用途 | プライバシーポリシー |
-|---------|--------|------|---------------------|
-| Firebase Authentication | Google LLC | ユーザー認証 | [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy) |
-| Cloud Firestore | Google LLC | データ保存 | 上記に同じ |
-| Firebase Storage | Google LLC | ファイル保存 | 上記に同じ |
-| Firebase Crashlytics | Google LLC | クラッシュ解析 | 上記に同じ |
-| Firebase Remote Config | Google LLC | アプリ設定の配信 | 上記に同じ |
-| Firebase Cloud Messaging | Google LLC | プッシュ通知 | 上記に同じ |
-| Google AdMob | Google LLC | 広告配信 | [https://policies.google.com/privacy](https://policies.google.com/privacy) |
-| Google Sign-in | Google LLC | Googleアカウント認証 | 上記に同じ |
-| Sign in with Apple | Apple Inc. | Appleアカウント認証 | [https://www.apple.com/legal/privacy/](https://www.apple.com/legal/privacy/) |
+- Firebase Authentication（提供元: Google LLC、用途: ユーザー認証）
+- Cloud Firestore（提供元: Google LLC、用途: データ保存）
+- Firebase Storage（提供元: Google LLC、用途: ファイル保存）
+- Firebase Crashlytics（提供元: Google LLC、用途: クラッシュ解析）
+- Firebase Remote Config（提供元: Google LLC、用途: アプリ設定の配信）
+- Firebase Cloud Messaging（提供元: Google LLC、用途: プッシュ通知）
+- Google AdMob（提供元: Google LLC、用途: 広告配信）
+- Google Sign-in（提供元: Google LLC、用途: Googleアカウント認証）
+- Sign in with Apple（提供元: Apple Inc.、用途: Appleアカウント認証）
+
+外部サービスのプライバシーポリシー:
+
+- Firebase: https://firebase.google.com/support/privacy
+- Google: https://policies.google.com/privacy
+- Apple: https://www.apple.com/legal/privacy/
 
 ### 広告について
 
@@ -89,14 +89,12 @@
 
 ## 第5条（データの保存と保持期間）
 
-| データの種類 | 保存場所 | 保持期間 |
-|------------|---------|---------|
-| アカウント情報・愛犬プロフィール | Firebase（Google LLC のサーバー） | アカウント削除まで |
-| カレンダー・記録データ | Firebase（Google LLC のサーバー） | アカウント削除まで |
-| 施設提案・コミュニティ投稿 | Firebase（Google LLC のサーバー） | アカウント削除まで |
-| 位置情報 | 端末内のみ（サーバー保存なし） | アプリ使用中のみ |
-| クラッシュログ | Firebase Crashlytics | 各サービスのポリシーによる |
-| 広告識別情報 | 各広告事業者のサーバー | 各サービスのポリシーによる |
+- アカウント情報・愛犬プロフィール: Firebase（Google LLC のサーバー）に保存し、保持期間はアカウント削除まで
+- カレンダー・記録データ: Firebase（Google LLC のサーバー）に保存し、保持期間はアカウント削除まで
+- 施設提案・コミュニティ投稿: Firebase（Google LLC のサーバー）に保存し、保持期間はアカウント削除まで
+- 位置情報: 端末内のみで処理（サーバー保存なし）し、保持期間はアプリ使用中のみ
+- クラッシュログ: Firebase Crashlytics に保存し、保持期間は各サービスのポリシーによる
+- 広告識別情報: 各広告事業者のサーバーに保存し、保持期間は各サービスのポリシーによる
 
 アカウントを削除した場合、Firebase 上に保存されたすべての個人データは**即時に削除**されます。
 
